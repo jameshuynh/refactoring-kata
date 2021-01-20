@@ -1,13 +1,14 @@
 package main
 
+// Item presents data in Item
 type Item struct {
 	name            string
 	sellIn, quality int
 }
 
+// UpdateQuality updates quality of input items
 func UpdateQuality(items []*Item) {
 	for i := 0; i < len(items); i++ {
-
 		if items[i].name != "Aged Brie" && items[i].name != "Backstage passes to a TAFKAL80ETC concert" {
 			if items[i].quality > 0 {
 				if items[i].name != "Sulfuras, Hand of Ragnaros" {
@@ -54,5 +55,4 @@ func UpdateQuality(items []*Item) {
 			}
 		}
 	}
-
 }
